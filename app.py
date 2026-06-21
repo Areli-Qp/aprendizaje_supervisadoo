@@ -21,6 +21,7 @@ def load_models():
         except Exception as e:
             print(f"Error al cargar Random Forest: {e}")
             
+            
     if os.path.exists(MODEL_LR_PATH):
         try:
             models['lr'] = joblib.load(MODEL_LR_PATH)
